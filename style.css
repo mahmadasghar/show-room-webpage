@@ -10,6 +10,7 @@ body{
     height: 100vh;
     width: 100vw;
     font-family: "Poppins", sans-serif;
+    background: #000;
 }
 
 .logo{
@@ -81,9 +82,8 @@ main{
 .red-c{
     color: #d23f3d !important;
     border-color: #ca3634 !important;
+    transition: 1s;
 }
-
-
 .black{
     position: absolute;
     top: 0;
@@ -185,9 +185,12 @@ main{
     font-family: "Poppins", sans-serif;
     color: #EFCA29;
     cursor: pointer;
+    transition: 1s;
 }
-
-
+.specs button:hover{
+    background: #EFCA29;
+    color: #000;
+}
 .menu{
     position: absolute;
     top: 20px;
@@ -222,10 +225,26 @@ main{
     display: grid !important;
     place-content: center;
 }
-
-
 .swiper-pagination-bullet-active{
     opacity: 1;
     font-size: 20px;
     border: 1px solid #fff;
+}
+button[class="red-c"]{
+    background: none;
+    color: #ca3634;
+    transition: 1s;
+}
+button[class="red-c"]:hover{
+    background: #ca3634;
+    color: #fff;
+}
+button[class="blue-c"]{
+    background: none;
+    color: #00D2FA;
+    transition: 1s;
+}
+button[class="blue-c"]:hover{
+    background: #00D2FA;
+    color: #000;
 }
